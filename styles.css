@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+html, body {
+    height: 100%;
+}
+
+
+body {
+    background-color: #252a41;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+    font-size: 2.5rem;
+    color: white;   
+    text-shadow: 2px 2px 5px #DA0463;
+    font-family: cursive;
+}
+
+.set{
+    margin-top: 20vh;
+    display: flex;
+    gap: 4%;
+    justify-content: center;
+    align-items: center;
+}
+
+.drum{
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    line-height: 5;
+    text-shadow: 2px 2px 5px #DA0463;
+
+    box-shadow:
+        0 0 0 6px rgba(255,255,255,0.08),
+        0 8px 16px rgba(0,0,0,0.4);
+
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.drum:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 0 0 6px rgba(255,255,255,0.12),
+    0 12px 20px rgba(0,0,0,0.5);
+  transition: 0.2s;
+}
+
+
+footer{
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+
+
+.w{
+    background-image: url(tom1.png);
+    background-size: cover;
+}
+
+.a{
+    background-image: url(tom2.png);
+    background-size: cover;
+}
+
+.s{
+    background-image: url(tom3.png);
+    background-size: cover;
+}
+
+.d{
+    background-image: url(tom4.png);
+    background-size: cover;
+}
+
+
+.j{
+    background-image: url(snare.png);
+    background-size: cover;
+}
+
+.k{
+    background-image: url(kick.png);
+    background-size: cover;
+}
+
+.l{
+    background-image: url(crash.png);
+    background-size: cover;
+}
+
+
+.pressed {
+  transform: scale(1.15);
+  box-shadow:
+    0 0 0 6px rgba(255,255,255,0.15),
+    0 4px 8px rgba(0,0,0,0.6);
+}
